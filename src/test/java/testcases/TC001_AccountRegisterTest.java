@@ -21,13 +21,19 @@ public class TC001_AccountRegisterTest extends BaseClass{
 @Test
 public void verify_AccountRegistration() throws InterruptedException {
 	
+	try {
+	logger.info("****************Starting TC001_AccountRegisterTest*************************");
+	
 	HomePage hp= new HomePage(driver);
 	
 	hp.clickMyAccount();
 	hp.clickRegister();
-	
+	logger.info("Clicked on Register Link");
 	
 	RegisterPage regp= new RegisterPage(driver);
+	
+	logger.info("Providing customer details...");
+	
 	regp.enterFirstname(randomString().toUpperCase());
 	regp.enterLastname(randomString().toUpperCase());
 	regp.enteremail(randomString()+"@gmail.com");
@@ -39,11 +45,31 @@ public void verify_AccountRegistration() throws InterruptedException {
 	Thread.sleep(4000);
 	regp.clickContinue();
 	
-	String cmsg= regp.getmsgConfirmation();
+	logger.info("Validating excepcted message");
+	
+    String cmsg= regp.getmsgConfirmation();
 	Assert.assertEquals(cmsg, "Congratulations! Your new account has been successfully created!");
+	
+	/*if you want to test with test fail 
+	String cmsg1= regp.getmsgConfirmation();
+	if(cmsg1.equals("Congratulations! Your new account successfully created!")) {
+	Assert.assertTrue(true);
+	}else{
+		logger.error("Test Failed");
+		logger.debug("Debug logs");
+		Assert.assertTrue(false);
+	}*/
+	
+	}
+	catch(Exception e){
+		logger.error("Test Failed");
+		logger.debug("Debug logs");
+		Assert.fail();
+	}
+	logger.info("****************End TC001_AccountRegisterTest*************************");	
+	}
 }
 
 
 
 
-}

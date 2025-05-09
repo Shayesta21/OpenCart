@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="opencart suite">
+<test  name= "opencart test">
+<parameter name="os" value="windows"/>
+<parameter  name="browser" value="chrome" />
+
+<classes>
+<!-- <class name= "testcases.TC001_AccountRegisterTest"/> -->
+<class name= "testcases.TC002_AccountLoginTest"/>
+
+
+</classes>
+</test>
+</suite>
