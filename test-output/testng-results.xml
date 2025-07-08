@@ -1,13 +1,23 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-05-08T18:10:46 EDT" name="opencart suite" finished-at="2025-05-08T18:10:57 EDT" duration-ms="10919">
+  <suite started-at="2025-07-08T17:40:36 EDT" name="opencart suite" finished-at="2025-07-08T17:40:59 EDT" duration-ms="22548">
     <groups>
+      <group name="Master">
+        <method signature="TC001_AccountRegisterTest.verify_AccountRegistration()[pri:0, instance:testcases.TC001_AccountRegisterTest@5e4bd84a]" name="verify_AccountRegistration" class="testcases.TC001_AccountRegisterTest"/>
+        <method signature="TC002_AccountLoginTest.verify_login()[pri:0, instance:testcases.TC002_AccountLoginTest@6c0d9d86]" name="verify_login" class="testcases.TC002_AccountLoginTest"/>
+      </group> <!-- Master -->
+      <group name="Sanity">
+        <method signature="TC001_AccountRegisterTest.verify_AccountRegistration()[pri:0, instance:testcases.TC001_AccountRegisterTest@5e4bd84a]" name="verify_AccountRegistration" class="testcases.TC001_AccountRegisterTest"/>
+      </group> <!-- Sanity -->
+      <group name="Regression">
+        <method signature="TC002_AccountLoginTest.verify_login()[pri:0, instance:testcases.TC002_AccountLoginTest@6c0d9d86]" name="verify_login" class="testcases.TC002_AccountLoginTest"/>
+      </group> <!-- Regression -->
     </groups>
-    <test started-at="2025-05-08T18:10:46 EDT" name="opencart test" finished-at="2025-05-08T18:10:57 EDT" duration-ms="10919">
-      <class name="testcases.TC002_AccountLoginTest">
-        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC002_AccountLoginTest@4f9a2c08]" started-at="2025-05-08T18:10:46 EDT" name="setup" finished-at="2025-05-08T18:10:52 EDT" duration-ms="5694" status="PASS">
+    <test started-at="2025-07-08T17:40:36 EDT" name="opencart test" finished-at="2025-07-08T17:40:59 EDT" duration-ms="22548">
+      <class name="testcases.TC001_AccountRegisterTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC001_AccountRegisterTest@5e4bd84a]" started-at="2025-07-08T17:40:36 EDT" name="setup" finished-at="2025-07-08T17:40:42 EDT" duration-ms="5278" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -23,11 +33,37 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="verify_login()[pri:0, instance:testcases.TC002_AccountLoginTest@4f9a2c08]" started-at="2025-05-08T18:10:52 EDT" name="verify_login" finished-at="2025-05-08T18:10:57 EDT" duration-ms="5079" status="PASS">
+        <test-method signature="verify_AccountRegistration()[pri:0, instance:testcases.TC001_AccountRegisterTest@5e4bd84a]" started-at="2025-07-08T17:40:42 EDT" name="verify_AccountRegistration" finished-at="2025-07-08T17:40:49 EDT" duration-ms="7236" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verify_AccountRegistration -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC001_AccountRegisterTest@5e4bd84a]" started-at="2025-07-08T17:40:49 EDT" name="tearDown" finished-at="2025-07-08T17:40:49 EDT" duration-ms="360" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- testcases.TC001_AccountRegisterTest -->
+      <class name="testcases.TC002_AccountLoginTest">
+        <test-method is-config="true" signature="setup(java.lang.String,java.lang.String)[pri:0, instance:testcases.TC002_AccountLoginTest@6c0d9d86]" started-at="2025-07-08T17:40:49 EDT" name="setup" finished-at="2025-07-08T17:40:53 EDT" duration-ms="4148" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[windows]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="verify_login()[pri:0, instance:testcases.TC002_AccountLoginTest@6c0d9d86]" started-at="2025-07-08T17:40:53 EDT" name="verify_login" finished-at="2025-07-08T17:40:59 EDT" duration-ms="5262" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verify_login -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002_AccountLoginTest@4f9a2c08]" started-at="2025-05-08T18:10:57 EDT" name="tearDown" finished-at="2025-05-08T18:10:57 EDT" duration-ms="106" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:testcases.TC002_AccountLoginTest@6c0d9d86]" started-at="2025-07-08T17:40:59 EDT" name="tearDown" finished-at="2025-07-08T17:40:59 EDT" duration-ms="198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

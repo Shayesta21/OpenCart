@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-opencart_suite" class="navigator-link ">
-                    <span>C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\master.xml</span>
+                    <span>C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -60,7 +60,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="group-opencart_suite" class="navigator-link ">
-                    <span>0 groups</span>
+                    <span>3 groups</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">2 methods,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -101,6 +101,11 @@
                       <a href="#" panel-name="suite-opencart_suite" class="show-methods passed suite-opencart_suite"> (show)</a> <!-- show-methods passed suite-opencart_suite -->
                     </span>
                     <div class="method-list-content passed suite-opencart_suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-opencart_suite" title="testcases.TC001_AccountRegisterTest" class="method navigator-link" hash-for-method="verify_AccountRegistration">verify_AccountRegistration</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-opencart_suite" title="testcases.TC002_AccountLoginTest" class="method navigator-link" hash-for-method="verify_login">verify_login</a> <!-- method navigator-link -->
@@ -121,6 +126,21 @@
           <div class="suite-opencart_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
+              <span class="class-name">testcases.TC001_AccountRegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verify_AccountRegistration">
+                  </a> <!-- verify_AccountRegistration -->
+                  <span class="method-name">verify_AccountRegistration</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-opencart_suite-class-passed -->
+          <div class="suite-opencart_suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
               <span class="class-name">testcases.TC002_AccountLoginTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -136,17 +156,34 @@
         </div> <!-- panel opencart_suite -->
         <div panel-name="test-xml-opencart_suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\master.xml</span>
+            <span class="header-content">C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite name=&quot;opencart suite&quot;&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Master&quot;/&gt;
+      &lt;include name=&quot;Sanity&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
+      &lt;exclude name=&quot;&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
+  &lt;groups&gt;
+    &lt;run&gt;
+      &lt;include name=&quot;Master&quot;/&gt;
+      &lt;include name=&quot;Sanity&quot;/&gt;
+      &lt;include name=&quot;regression&quot;/&gt;
+      &lt;exclude name=&quot;&quot;/&gt;
+    &lt;/run&gt;
+  &lt;/groups&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;opencart test&quot;&gt;
     &lt;parameter name=&quot;os&quot; value=&quot;windows&quot;/&gt;
     &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;testcases.TC001_AccountRegisterTest&quot;/&gt;
       &lt;class name=&quot;testcases.TC002_AccountLoginTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- opencart test --&gt;
@@ -161,7 +198,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">opencart test (1 class)</span>
+                <span class="test-name">opencart test (2 classes)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -171,6 +208,34 @@
             <span class="header-content">Groups for opencart suite</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="test-group">
+              <span class="test-group-name">Master</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_AccountRegistration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Regression</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_login</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
+            <div class="test-group">
+              <span class="test-group-name">Sanity</span>
+              <br/>
+              <div class="method-in-group">
+                <span class="method-in-group-name">verify_AccountRegistration</span>
+                <br/>
+              </div> <!-- method-in-group -->
+            </div> <!-- test-group -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="times-opencart_suite" class="panel">
@@ -187,16 +252,20 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(2);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verify_login')
-data.setCell(0, 2, 'testcases.TC002_AccountLoginTest')
-data.setCell(0, 3, 5079);
+data.setCell(0, 1, 'verify_AccountRegistration')
+data.setCell(0, 2, 'testcases.TC001_AccountRegisterTest')
+data.setCell(0, 3, 7236);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verify_login')
+data.setCell(1, 2, 'testcases.TC002_AccountLoginTest')
+data.setCell(1, 3, 5262);
 window.suiteTableData['opencart_suite']= { tableData: data, tableDiv: 'times-div-opencart_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 12 seconds</span>
               <div id="times-div-opencart_suite">
               </div> <!-- times-div-opencart_suite -->
             </div> <!-- times-div -->
@@ -222,18 +291,33 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.TC002_AccountLoginTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.TC001_AccountRegisterTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">setup(windows, chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <span class="method-name">verify_login</span>
-                <span class="method-start">5707 ms</span>
+                <span class="method-name">verify_AccountRegistration</span>
+                <span class="method-start">5286 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">10790 ms</span>
+                <span class="method-start">12537 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">testcases.TC002_AccountLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">setup(windows, chrome)</span>
+                <span class="method-start">12902 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">verify_login</span>
+                <span class="method-start">17052 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">22314 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

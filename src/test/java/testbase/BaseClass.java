@@ -25,7 +25,7 @@ public class BaseClass {
 	public Properties p;//to load config.propertiesfile
 	
 	
-	@BeforeClass
+	@BeforeClass(groups={"Sanity","Regression","Master"})
 	@Parameters ({"os","browser"})
 	public void setup(String os, String br) throws IOException {
 	//	FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties");
@@ -45,13 +45,13 @@ public class BaseClass {
 		driver.manage().deleteAllCookies();
 		driver.manage().window().maximize();
 	 // driver.get("https://tutorialsninja.com/demo/");
-	// driver.get(p.getProperty("appurl")); //reading app url form config.poperty file
+	// driver.get(p.getProperty("appurl")); //reading app url from config.poperty file
 	   driver.get(p.getProperty("appurl").trim());
 	   driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 	}
 	
 	
-	@AfterClass
+	@AfterClass(groups= {"Sanity","Regression","Master"})
 	public void tearDown() {
 		driver.close();
 	}

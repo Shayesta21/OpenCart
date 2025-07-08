@@ -18,7 +18,7 @@ import org.testng.annotations.AfterClass;
 public class TC001_AccountRegisterTest extends BaseClass{
 
 
-@Test
+@Test(groups={"Sanity","Master"})
 public void verify_AccountRegistration() throws InterruptedException {
 	
 	try {
