@@ -23,7 +23,7 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 
 public class BaseClass {
-	public WebDriver driver;
+	public static WebDriver driver;
 	public Logger logger; //add log4j
 	
 	public Properties p;//to load config.propertiesfile

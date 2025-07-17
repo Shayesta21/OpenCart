@@ -1,5 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="opencart suite" thread-count="5"  parallel="tests">
+
+<listeners>
+<listener class-name="utilities.ExtentReportManager" />
+</listeners>
+
 <test   name= "chrome test">
 <parameter name="os" value="Windows"/>
 <parameter  name="browser" value="chrome" />

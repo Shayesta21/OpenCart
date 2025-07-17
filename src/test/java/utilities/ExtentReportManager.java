@@ -34,7 +34,7 @@ public class ExtentReportManager implements ITestListener {
 		
 	//	String timestamp= new SimpleDateFormat("yyyy.MM.dd.HH.mm.ss").format(new Date()); //the above three lines in one to avoid multiple variables
 		
-		repname= "Test-Report: " +curdatetimestamp+".html";
+		repname= "Test-Report- " +curdatetimestamp+".html";
 		
 		sparkreporter = new ExtentSparkReporter(".\\reports\\"+repname); //specify the location of the report
 		

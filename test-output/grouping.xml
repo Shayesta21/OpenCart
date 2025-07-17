@@ -1,15 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="opencart suite">
 
+
+
 <groups>
 <run>
 <include name="Master"/>
-<include name="Sanity"/>
-<include name="Regression"/>
-<exclude name=""/>
+<!--  --><include name="Sanity"/>
+<!--  --><include name="Regression"/>
+<!--  --><exclude name=""/>
 </run>
 </groups>
 
+<listeners>
+<listener class-name="utilities.ExtentReportManager"/>
+</listeners>
 
 
 <test thread-count="5" name= "opencart test">

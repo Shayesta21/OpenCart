@@ -30,3 +30,36 @@
 17:40:53.840 [main] INFO  testcases.TC002_AccountLoginTest - ************Starting TC001_AccountLoginTest************ 
 17:40:54.482 [main] INFO  testcases.TC002_AccountLoginTest - enter email, password and click login button
 17:40:59.097 [main] INFO  testcases.TC002_AccountLoginTest - ****************Test Case completed**********************
+19:26:26.299 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml"
+19:26:26.327 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml] otherwise TestNG may fail or not work as expected.
+19:26:26.583 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml
+
+19:27:25.968 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml"
+19:27:25.980 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml] otherwise TestNG may fail or not work as expected.
+19:27:26.163 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml
+
+19:28:00.567 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml"
+19:28:00.581 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml] otherwise TestNG may fail or not work as expected.
+19:28:00.784 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml
+
+19:28:53.432 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\master.xml"
+19:28:53.444 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\master.xml] otherwise TestNG may fail or not work as expected.
+19:28:53.615 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\master.xml
+
+19:36:20.357 [main] DEBUG org.testng.TestNG - suiteXmlPath: "C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml"
+19:36:20.370 [main] WARN  org.testng.xml.TestNGContentHandler - It is strongly recommended to add "<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.1.dtd" >" at the top of the suite file [C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml] otherwise TestNG may fail or not work as expected.
+19:36:20.532 [main] INFO  org.testng.internal.Utils - [TestNG] Running:
+  C:\Users\Moham\OneDrive\Documents\Shayesta\JavaSeleniumProject1\OpenCart\test-output\grouping.xml
+
+19:36:26.921 [main] INFO  testcases.TC001_AccountRegisterTest - ****************Starting TC001_AccountRegisterTest*************************
+19:36:27.748 [main] INFO  testcases.TC001_AccountRegisterTest - Clicked on Register Link
+19:36:27.751 [main] INFO  testcases.TC001_AccountRegisterTest - Providing customer details...
+19:36:33.435 [main] INFO  testcases.TC001_AccountRegisterTest - Validating excepcted message
+19:36:33.468 [main] INFO  testcases.TC001_AccountRegisterTest - ****************End TC001_AccountRegisterTest*************************
+19:36:37.191 [main] INFO  testcases.TC002_AccountLoginTest - ************Starting TC001_AccountLoginTest************ 
+19:36:37.803 [main] INFO  testcases.TC002_AccountLoginTest - enter email, password and click login button
+19:36:42.252 [main] INFO  testcases.TC002_AccountLoginTest - ****************Test Case completed**********************
