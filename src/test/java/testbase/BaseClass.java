@@ -1,15 +1,19 @@
 package testbase;
 
+import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileReader;
 import java.io.IOException;
+import java.text.SimpleDateFormat;
 import java.time.Duration;
+import java.util.Date;
 import java.util.Properties;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.commons.lang3.RandomStringUtils;
-
+import org.openqa.selenium.OutputType;
+import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.edge.EdgeDriver;
@@ -75,6 +79,21 @@ public class BaseClass {
 	}
 
 	
+	public String captureScreen(String testname) throws IOException {
+		
+		String timeStamp= new SimpleDateFormat("yyyymmddhhmmss").format(new Date());
+		
+		TakesScreenshot  screenshot= (TakesScreenshot) driver;    
+		File sourcefile =screenshot.getScreenshotAs(OutputType.FILE);
+		
+		String targetfilepath = System.getProperty("user.dir")+"\\screenshots\\"+ testname+ "_"+timeStamp;
+		File targetfile = new File (targetfilepath);
+		
+		sourcefile.renameTo(targetfile);
+	                    
+		return targetfilepath;
+	
+	}
 	
 	
 	
