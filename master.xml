@@ -7,14 +7,15 @@
 </listeners>
 
 
+
 <test  thread-count="5" name= "opencart test">
 <parameter name="os" value="windows"/>
 <parameter  name="browser" value="chrome" />
 
 <classes>
-<!-- <class name= "testcases.TC001_AccountRegisterTest"/> -->
-<!--  --><class name= "testcases.TC002_AccountLoginTest"/>-->
-<class name="testcases.TC003LoginDataDrivenTC"/>
+ <class name= "testcases.TC001_AccountRegisterTest"/> 
+<class name= "testcases.TC002_AccountLoginTest"/>
+<!--  --><class name="testcases.TC003LoginDataDrivenTC"/>
 
 </classes>
 </test>
