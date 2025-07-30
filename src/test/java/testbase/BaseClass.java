@@ -38,6 +38,8 @@ public class BaseClass {
 	public void setup(String os, String br) throws IOException {
 	//	FileInputStream file = new FileInputStream(System.getProperty("user.dir") + "\\src\\test\\resources\\config.properties");
 	
+		
+		//loading config.properties file
 		FileReader file1 = new FileReader(".//src//test//resources//config.properties");
 		p= new Properties();
 		p.load(file1);
@@ -52,9 +54,17 @@ public class BaseClass {
 			DesiredCapabilities dc= new DesiredCapabilities();
 			if(os.equalsIgnoreCase("windows")) {
 				dc.setPlatform(Platform.WIN11);
-			}else if(os.equalsIgnoreCase("mac")) {
+			}
+			else if(os.equalsIgnoreCase("mac")) 
+			{
 				dc.setPlatform(Platform.MAC);
-			}else {
+			}
+			else if(os.equalsIgnoreCase("linux"))
+			{
+				dc.setPlatform(Platform.LINUX);
+			}
+			else 
+			{
 				System.out.println("no matching os");
 				
 			}
@@ -63,7 +73,8 @@ public class BaseClass {
 			switch(br.toLowerCase()) {
 			case "chrome":  dc.setBrowserName("chrome"); break;
 			case "firefox": dc.setBrowserName("Firefox"); break;
-			case "edge":    dc.setBrowserName("edge");break;
+			case "edge":    dc.setBrowserName("MicrosoftEdge");break;
+			
 			default: System.out.println("Nomatching browser");return;
 			
 			}

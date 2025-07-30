@@ -101,7 +101,7 @@ public class ExtentReportManager implements ITestListener {
 		extent.flush();
 		
 		
-	/*	//optional code to open the file directly on the browser after execution
+		//optional code to open the file directly on the browser after execution
 		
 		  String pathofextentreport =System.getProperty("user.dir")+"\\reports\\repname";
 		  File extentReport= new File( pathofextentreport);
@@ -115,7 +115,7 @@ public class ExtentReportManager implements ITestListener {
 		
 		
 		
-		*/
+		
 		
 		
 		
